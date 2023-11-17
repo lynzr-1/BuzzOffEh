@@ -21,11 +21,13 @@ public class Player : MonoBehaviour
     Rigidbody2D r2d;
     CapsuleCollider2D mainCollider;
     Transform t;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         t = transform;
+        anim = GetComponent<Animator>();
         r2d = GetComponent<Rigidbody2D>();
         mainCollider = GetComponent<CapsuleCollider2D>();
         r2d.freezeRotation = true;
@@ -107,5 +109,6 @@ public class Player : MonoBehaviour
 
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
+        anim.SetFloat("Speed", Mathf.Abs(r2d.velocity.x));
     }
 }
