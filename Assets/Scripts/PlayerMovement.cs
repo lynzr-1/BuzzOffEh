@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     CapsuleCollider2D mainCollider;
     Transform t;
     private Animator anim;
+    public AudioSource audioSource;
+    public AudioClip movementSound;
 
     public bool speedBoost; //bool variable for power up cooldown
 
@@ -113,6 +115,12 @@ public class Player : MonoBehaviour
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(r2d.velocity.x));
+
+        // Play movement sound
+        if (moveDirection != 0 && isGrounded && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(movementSound);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
