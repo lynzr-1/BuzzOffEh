@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Foreground
+  - Midground
+  - Background
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: WayBack
+    uniqueID: 2931630059
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -47,6 +50,12 @@ TagManager:
   - name: Ground
     uniqueID: 1757666071
     locked: 0
+  - name: Foreground
+    uniqueID: 1480998963
+    locked: 0
   - name: Background
     uniqueID: 3972364535
+    locked: 0
+  - name: Midground
+    uniqueID: 3251268325
     locked: 0
