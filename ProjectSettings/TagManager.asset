@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CanBePickedUp
+  - NanaimoBar
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - Foreground
   - Midground
   - Background
-  - 
-  - 
+  - Consumables
+  - Enemies
   - 
   - 
   - 
@@ -46,6 +48,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1036106037
+    locked: 0
+  - name: Objects
+    uniqueID: 3973918395
     locked: 0
   - name: Ground
     uniqueID: 1757666071

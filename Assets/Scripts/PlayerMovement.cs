@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
     // Move player in 2D space
     public float maxSpeed = 3.4f;
     public float jumpHeight = 6.5f;
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour
     CapsuleCollider2D mainCollider;
     Transform t;
     private Animator anim;
+
+    public bool speedBoost; //bool variable for power up cooldown
 
     // Start is called before the first frame update
     void Start()
@@ -110,5 +113,29 @@ public class Player : MonoBehaviour
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(r2d.velocity.x));
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        //AudioSource audioSource = gameObject.AddComponent<AudioSource>() as AudioSource;
+        //AudioClip powerUpSound = Resources.Load<AudioClip>("Sounds/Powerup14");
+
+        if (collision.gameObject.CompareTag("CanBePickedUp"))
+        {
+            //audioSource.PlayOneShot(powerUpSound);
+            maxSpeed = 6.0f;
+            speedBoost = true;
+            StartCoroutine(PowerUpCooldown());
+            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
+        }
+    }
+
+    IEnumerator PowerUpCooldown()
+    {
+        yield return new WaitForSeconds(5.0f);
+        speedBoost = false;
+        maxSpeed = 3.4f;
     }
 }
