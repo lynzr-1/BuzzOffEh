@@ -25,6 +25,9 @@ public class Player : MonoBehaviour
     private Animator anim;
     public AudioSource audioSource;
     public AudioClip movementSound;
+    public AudioClip attackSound;
+    public Transform attackPoint;
+    public float attackRange = 1f;
 
     public bool speedBoost; //bool variable for power up cooldown
 
@@ -82,13 +85,25 @@ public class Player : MonoBehaviour
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
+        // Attacking
+        if (Input.GetMouseButtonDown(0))
+        {
+            Attack();
+        }
+
         // Camera follow
         if (mainCamera)
         {
             mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
         }
     }
-    
+
+    private void Attack()
+    {
+        anim.SetTrigger("Attack");
+        audioSource.PlayOneShot(attackSound);
+    }
+
     void FixedUpdate()
     {
         Bounds colliderBounds = mainCollider.bounds;
@@ -116,10 +131,16 @@ public class Player : MonoBehaviour
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(r2d.velocity.x));
 
+        // Calculate normalized speed
+        float normalizedSpeed = Mathf.Abs(r2d.velocity.x) / maxSpeed;
+
+        // Set pitch based on normalized speed
+        audioSource.pitch = Mathf.Lerp(0.8f, 1.2f, normalizedSpeed);
+
         // Play movement sound
         if (moveDirection != 0 && isGrounded && !audioSource.isPlaying)
         {
-            audioSource.PlayOneShot(movementSound);
+                audioSource.PlayOneShot(movementSound);
         }
     }
 
