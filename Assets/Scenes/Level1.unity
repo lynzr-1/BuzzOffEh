@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6684481}
   m_Layer: 0
-  m_Name: Tree #2 - 1.5
+  m_Name: Wide Tree 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 54898356}
   - component: {fileID: 54898355}
   m_Layer: 0
-  m_Name: hill-3_11
+  m_Name: Hill 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2295,7 +2295,7 @@ GameObject:
   - component: {fileID: 175317826}
   - component: {fileID: 175317827}
   m_Layer: 0
-  m_Name: bush-3_15 (6)
+  m_Name: Bush 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2310,11 +2310,11 @@ Transform:
   m_GameObject: {fileID: 175317825}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 256.78, y: 2.34, z: 0}
+  m_LocalPosition: {x: 256.78, y: 2.3400002, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &175317827
 SpriteRenderer:
@@ -2877,7 +2877,7 @@ GameObject:
   - component: {fileID: 209276844}
   - component: {fileID: 209276843}
   m_Layer: 0
-  m_Name: hill-3-6-flip
+  m_Name: Hill 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3079,7 +3079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233035647}
   m_Layer: 0
-  m_Name: Tree #3 - 1.25
+  m_Name: Tall Tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3123,7 +3123,7 @@ GameObject:
   - component: {fileID: 240328839}
   - component: {fileID: 240328840}
   m_Layer: 0
-  m_Name: bush-3_15 (2)
+  m_Name: Bush 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3142,7 +3142,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &240328840
 SpriteRenderer:
@@ -3206,7 +3206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 254298663}
   m_Layer: 0
-  m_Name: Tree #2 - 1
+  m_Name: Wide Tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3376,7 +3376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256442331}
   m_Layer: 0
-  m_Name: Tree #3 - 1.5
+  m_Name: Tall Tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5088,7 +5088,7 @@ GameObject:
   - component: {fileID: 394687128}
   - component: {fileID: 394687129}
   m_Layer: 0
-  m_Name: Rock - Tall Grey (1)
+  m_Name: Tall Rock 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5103,11 +5103,11 @@ Transform:
   m_GameObject: {fileID: 394687127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.676, y: -0.861, z: 0.009511752}
+  m_LocalPosition: {x: 21.676003, y: -0.861, z: 0.009511752}
   m_LocalScale: {x: 0.84, y: 0.84, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1108828833}
+  m_Father: {fileID: 566983941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &394687129
 SpriteRenderer:
@@ -5171,7 +5171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 397111126}
   m_Layer: 0
-  m_Name: Double Platform (1)
+  m_Name: Double Platform 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5185,8 +5185,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397111125}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.43, y: -0.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.43, y: -0.059999943, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5195,7 +5195,7 @@ Transform:
   - {fileID: 847604891}
   - {fileID: 206355907}
   - {fileID: 1107487812}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 2040397792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &398407840
 GameObject:
@@ -5337,7 +5337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404761917}
   m_Layer: 0
-  m_Name: Double Platform (3)
+  m_Name: Double Platform 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5351,8 +5351,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404761916}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.08, y: -0.01, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -62.079998, y: -0.00999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5361,7 +5361,7 @@ Transform:
   - {fileID: 728638162}
   - {fileID: 1439891341}
   - {fileID: 17743705}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 2040397792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &415749756
 GameObject:
@@ -5373,7 +5373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415749757}
   m_Layer: 0
-  m_Name: Tree #1 - 1.75 (1)
+  m_Name: Basic Tree 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5781,7 +5781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 442326238}
   m_Layer: 0
-  m_Name: Tree #2 - 1.5
+  m_Name: Wide Tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6336,7 +6336,7 @@ GameObject:
   - component: {fileID: 466396326}
   - component: {fileID: 466396327}
   m_Layer: 0
-  m_Name: bush-3_15 (12)
+  m_Name: Bush 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6351,11 +6351,11 @@ Transform:
   m_GameObject: {fileID: 466396325}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -192.47, y: 2.28, z: 0}
+  m_LocalPosition: {x: -192.47, y: 2.2799997, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &466396327
 SpriteRenderer:
@@ -6504,7 +6504,7 @@ GameObject:
   - component: {fileID: 483855505}
   - component: {fileID: 483855506}
   m_Layer: 0
-  m_Name: flower_objects_12
+  m_Name: Tall Flower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6523,7 +6523,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 741701026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &483855506
 SpriteRenderer:
@@ -6671,7 +6671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 500484800}
   m_Layer: 0
-  m_Name: Tree #1 - 1.75
+  m_Name: Basic Tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6840,7 +6840,7 @@ GameObject:
   - component: {fileID: 511194722}
   - component: {fileID: 511194723}
   m_Layer: 0
-  m_Name: flower-blue-1_10
+  m_Name: Blue Flower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6859,7 +6859,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 741701026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &511194723
 SpriteRenderer:
@@ -7029,7 +7029,7 @@ GameObject:
   - component: {fileID: 521070084}
   - component: {fileID: 521070085}
   m_Layer: 0
-  m_Name: use8948-5 (10)
+  m_Name: Background 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7044,7 +7044,7 @@ Transform:
   m_GameObject: {fileID: 521070083}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70.61, y: 0.099410534, z: 10.1030855}
+  m_LocalPosition: {x: 70.19, y: 0.12, z: 10.1030855}
   m_LocalScale: {x: 2.2142746, y: 2.2142746, z: 2.2142746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7228,7 +7228,7 @@ GameObject:
   - component: {fileID: 547977411}
   - component: {fileID: 547977412}
   m_Layer: 0
-  m_Name: bush-3_15 (7)
+  m_Name: Bush 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7243,11 +7243,11 @@ Transform:
   m_GameObject: {fileID: 547977410}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.96, y: 0.66, z: 0}
+  m_LocalPosition: {x: -5.959999, y: 0.6600001, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &547977412
 SpriteRenderer:
@@ -7312,7 +7312,7 @@ GameObject:
   - component: {fileID: 549292531}
   - component: {fileID: 549292532}
   m_Layer: 0
-  m_Name: use8948-5
+  m_Name: Background 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7553,6 +7553,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &566983940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566983941}
+  m_Layer: 0
+  m_Name: Tall Rocks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &566983941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566983940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2108022444}
+  - {fileID: 935404845}
+  - {fileID: 394687128}
+  m_Father: {fileID: 1108828833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569081062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7862,7 +7896,7 @@ GameObject:
   - component: {fileID: 609266926}
   - component: {fileID: 609266925}
   m_Layer: 0
-  m_Name: hill-2_16
+  m_Name: Hill 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7947,7 +7981,7 @@ GameObject:
   - component: {fileID: 615884896}
   - component: {fileID: 615884898}
   m_Layer: 0
-  m_Name: Tree Arch
+  m_Name: Tree Arch 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8018,7 +8052,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 1455053856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &615884898
 PolygonCollider2D:
@@ -8147,6 +8181,39 @@ PolygonCollider2D:
       - {x: 2.24, y: -0.57}
       - {x: 2.21, y: -0.53999996}
   m_UseDelaunayMesh: 0
+--- !u!1 &622172038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622172039}
+  m_Layer: 0
+  m_Name: Small Rocks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622172039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622172038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2084687938}
+  - {fileID: 1492583171}
+  m_Father: {fileID: 1108828833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633607167
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,7 +8308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 636435204}
   m_Layer: 0
-  m_Name: Mosquito (1)
+  m_Name: Mosquito 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8527,7 +8594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643819700}
   m_Layer: 0
-  m_Name: Tree #1 - 1 (1)
+  m_Name: Basic Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8601,7 +8668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 671327514}
   m_Layer: 0
-  m_Name: Mosquito (3)
+  m_Name: Mosquito 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8636,7 +8703,7 @@ GameObject:
   - component: {fileID: 672980322}
   - component: {fileID: 672980321}
   m_Layer: 0
-  m_Name: dirt-2_2 (5)
+  m_Name: Hill 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8720,7 +8787,7 @@ GameObject:
   - component: {fileID: 685575009}
   - component: {fileID: 685575008}
   m_Layer: 0
-  m_Name: flower-red-2_13
+  m_Name: Red Flower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8791,7 +8858,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 741701026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696117644
 GameObject:
@@ -8804,7 +8871,7 @@ GameObject:
   - component: {fileID: 696117645}
   - component: {fileID: 696117646}
   m_Layer: 0
-  m_Name: use8948-5 (8)
+  m_Name: Background 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8819,7 +8886,7 @@ Transform:
   m_GameObject: {fileID: 696117644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.38, y: 0.099410534, z: 10.1030855}
+  m_LocalPosition: {x: 41.960003, y: 0.119999886, z: 10.1030855}
   m_LocalScale: {x: 2.2142746, y: 2.2142746, z: 2.2142746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9186,7 +9253,7 @@ GameObject:
   - component: {fileID: 725978562}
   - component: {fileID: 725978563}
   m_Layer: 0
-  m_Name: plant-3_9
+  m_Name: Tall Grass 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9201,11 +9268,11 @@ Transform:
   m_GameObject: {fileID: 725978561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.35, y: 0.56, z: 0}
+  m_LocalPosition: {x: 64.35, y: 0.55999994, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 741701026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &725978563
 SpriteRenderer:
@@ -9557,6 +9624,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &741701025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741701026}
+  m_Layer: 0
+  m_Name: Flowers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741701026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741701025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2013047698}
+  - {fileID: 483855505}
+  - {fileID: 685575009}
+  - {fileID: 725978562}
+  - {fileID: 1484522374}
+  - {fileID: 511194722}
+  m_Father: {fileID: 1622306565}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742303461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9652,7 +9756,7 @@ GameObject:
   - component: {fileID: 751614514}
   - component: {fileID: 751614515}
   m_Layer: 0
-  m_Name: bush-3_15 (3)
+  m_Name: Bush 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9671,7 +9775,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &751614515
 SpriteRenderer:
@@ -9736,7 +9840,7 @@ GameObject:
   - component: {fileID: 753925282}
   - component: {fileID: 753925283}
   m_Layer: 0
-  m_Name: use8948-5 (3)
+  m_Name: Background 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9820,7 +9924,7 @@ GameObject:
   - component: {fileID: 755936931}
   - component: {fileID: 755936932}
   m_Layer: 0
-  m_Name: use8948-5 (2)
+  m_Name: Background 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10286,7 +10390,7 @@ GameObject:
   - component: {fileID: 782216220}
   - component: {fileID: 782216221}
   m_Layer: 0
-  m_Name: log_objects_43 (1)
+  m_Name: Log 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10463,7 +10567,7 @@ GameObject:
   - component: {fileID: 810980989}
   - component: {fileID: 810980988}
   m_Layer: 0
-  m_Name: hill-3-4-flip
+  m_Name: Hill 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10629,7 +10733,7 @@ GameObject:
   - component: {fileID: 813732499}
   - component: {fileID: 813732498}
   m_Layer: 0
-  m_Name: hill-3_4
+  m_Name: Hill 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11010,7 +11114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 837294516}
   m_Layer: 0
-  m_Name: Tree #2 - 1.25
+  m_Name: Wide Tree 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11432,7 +11536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857361864}
   m_Layer: 0
-  m_Name: Tree #2 - 1 (1)
+  m_Name: Wide Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11557,7 +11661,7 @@ GameObject:
   - component: {fileID: 898015178}
   - component: {fileID: 898015179}
   m_Layer: 0
-  m_Name: use8948-5 (6)
+  m_Name: Background 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11572,7 +11676,7 @@ Transform:
   m_GameObject: {fileID: 898015177}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.43, y: 0.099410534, z: 10.1030855}
+  m_LocalPosition: {x: 14.010002, y: 0.119999886, z: 10.1030855}
   m_LocalScale: {x: 2.2142746, y: 2.2142746, z: 2.2142746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11724,7 +11828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914045850}
   m_Layer: 0
-  m_Name: Tree #3 - 1
+  m_Name: Tall Tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11852,7 +11956,7 @@ GameObject:
   - component: {fileID: 920764594}
   - component: {fileID: 920764595}
   m_Layer: 0
-  m_Name: bush-3_15 (8)
+  m_Name: Bush 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11867,11 +11971,11 @@ Transform:
   m_GameObject: {fileID: 920764593}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -74.98, y: 2.29, z: 0}
+  m_LocalPosition: {x: -74.979996, y: 2.29, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &920764595
 SpriteRenderer:
@@ -11936,7 +12040,7 @@ GameObject:
   - component: {fileID: 922978260}
   - component: {fileID: 922978261}
   m_Layer: 0
-  m_Name: use8948-5 (4)
+  m_Name: Background 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12020,7 +12124,7 @@ GameObject:
   - component: {fileID: 935404845}
   - component: {fileID: 935404846}
   m_Layer: 0
-  m_Name: Rock - Tall Grey (2)
+  m_Name: Tall Rock 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12035,11 +12139,11 @@ Transform:
   m_GameObject: {fileID: 935404844}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.301, y: -0.857, z: 0.009511752}
+  m_LocalPosition: {x: -20.300999, y: -0.857, z: 0.009511752}
   m_LocalScale: {x: 0.84, y: 0.84, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1108828833}
+  m_Father: {fileID: 566983941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &935404846
 SpriteRenderer:
@@ -12104,7 +12208,7 @@ GameObject:
   - component: {fileID: 940458363}
   - component: {fileID: 940458364}
   m_Layer: 0
-  m_Name: use8948-5 (5)
+  m_Name: Background 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12272,7 +12376,7 @@ GameObject:
   - component: {fileID: 967058491}
   - component: {fileID: 967058490}
   m_Layer: 0
-  m_Name: dirt-2_2 (3)
+  m_Name: Hill 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12458,15 +12562,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1079299299}
-  - {fileID: 397111126}
-  - {fileID: 404761917}
-  - {fileID: 1915674942}
-  - {fileID: 1158281211}
-  - {fileID: 1624230606}
-  - {fileID: 615884897}
-  - {fileID: 1905110133}
-  - {fileID: 1273674247}
+  - {fileID: 2040397792}
+  - {fileID: 1511522270}
+  - {fileID: 1455053856}
   m_Father: {fileID: 225758848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995278919
@@ -12564,7 +12662,7 @@ GameObject:
   - component: {fileID: 999094999}
   - component: {fileID: 999095000}
   m_Layer: 0
-  m_Name: bush-3_15 (4)
+  m_Name: Bush 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12583,7 +12681,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &999095000
 SpriteRenderer:
@@ -12816,7 +12914,7 @@ GameObject:
   - component: {fileID: 1024061826}
   - component: {fileID: 1024061825}
   m_Layer: 0
-  m_Name: dirt-2_2 (7)
+  m_Name: Hill 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13403,7 +13501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056785053}
   m_Layer: 0
-  m_Name: Tree #1 - 1
+  m_Name: Basic Tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13656,7 +13754,7 @@ GameObject:
   - component: {fileID: 1068957123}
   - component: {fileID: 1068957124}
   m_Layer: 0
-  m_Name: bush-3_15 (1)
+  m_Name: Bush 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13675,7 +13773,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1068957124
 SpriteRenderer:
@@ -13823,7 +13921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079299299}
   m_Layer: 0
-  m_Name: Double Platform
+  m_Name: Double Platform 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13837,8 +13935,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079299298}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.092, y: -0.011, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.09200001, y: -0.011000037, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13847,7 +13945,39 @@ Transform:
   - {fileID: 504224921}
   - {fileID: 338742857}
   - {fileID: 723369412}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 2040397792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083796974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083796975}
+  m_Layer: 0
+  m_Name: Mushrooms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083796975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083796974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2114866862}
+  m_Father: {fileID: 1622306565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1086282923
 GameObject:
@@ -14176,11 +14306,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2084687938}
-  - {fileID: 1492583171}
-  - {fileID: 2108022444}
-  - {fileID: 935404845}
-  - {fileID: 394687128}
+  - {fileID: 622172039}
+  - {fileID: 566983941}
   m_Father: {fileID: 225758848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1111584746
@@ -14193,7 +14320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111584747}
   m_Layer: 0
-  m_Name: Tree #2 - 1.25 (1)
+  m_Name: Wide Tree 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14410,7 +14537,8 @@ Transform:
   m_LocalPosition: {x: 4.79, y: -0.912, z: 0.009511752}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1706920148}
   m_Father: {fileID: 1588237035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1126558304
@@ -14760,7 +14888,7 @@ GameObject:
   - component: {fileID: 1146550678}
   - component: {fileID: 1146550677}
   m_Layer: 0
-  m_Name: dirt-2_2 (1)
+  m_Name: Hill 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14843,7 +14971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148633734}
   m_Layer: 0
-  m_Name: Tree #3 - 1.5 (1)
+  m_Name: Tall Tree 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14970,7 +15098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158281211}
   m_Layer: 0
-  m_Name: Single Platform
+  m_Name: Single Platform 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14984,15 +15112,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158281210}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.336, y: 1.991, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.335999, y: 1.9909999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1867296626}
   - {fileID: 255198349}
   - {fileID: 398407841}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 1511522270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1170078296
 GameObject:
@@ -15298,7 +15426,7 @@ GameObject:
   - component: {fileID: 1202532607}
   - component: {fileID: 1202532608}
   m_Layer: 0
-  m_Name: use8948-5 (9)
+  m_Name: Background 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15313,7 +15441,7 @@ Transform:
   m_GameObject: {fileID: 1202532606}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.52, y: 0.08, z: 10.1030855}
+  m_LocalPosition: {x: 56.100002, y: 0.10058935, z: 10.1030855}
   m_LocalScale: {x: 2.2142746, y: 2.2142746, z: 2.2142746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15466,7 +15594,7 @@ GameObject:
   - component: {fileID: 1204468929}
   - component: {fileID: 1204468930}
   m_Layer: 0
-  m_Name: bush-3_15 (9)
+  m_Name: Bush 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15485,7 +15613,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1204468930
 SpriteRenderer:
@@ -15634,7 +15762,7 @@ GameObject:
   - component: {fileID: 1215741079}
   - component: {fileID: 1215741080}
   m_Layer: 0
-  m_Name: bush-3_15 (10)
+  m_Name: Bush 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15649,11 +15777,11 @@ Transform:
   m_GameObject: {fileID: 1215741078}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -126.73, y: 1.66, z: 0}
+  m_LocalPosition: {x: -126.729996, y: 1.6599998, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1215741080
 SpriteRenderer:
@@ -16055,7 +16183,7 @@ GameObject:
   - component: {fileID: 1273674249}
   - component: {fileID: 1273674248}
   m_Layer: 0
-  m_Name: Tree Arch (2)
+  m_Name: Tree Arch 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16074,7 +16202,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 1455053856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1273674248
 PolygonCollider2D:
@@ -16434,7 +16562,7 @@ GameObject:
   - component: {fileID: 1280770525}
   - component: {fileID: 1280770526}
   m_Layer: 0
-  m_Name: use8948-5 (11)
+  m_Name: Background 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16449,7 +16577,7 @@ Transform:
   m_GameObject: {fileID: 1280770524}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.71, y: 0.099410534, z: 10.1030855}
+  m_LocalPosition: {x: 84.29, y: 0.119999886, z: 10.1030855}
   m_LocalScale: {x: 2.2142746, y: 2.2142746, z: 2.2142746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17466,7 +17594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347893957}
   m_Layer: 0
-  m_Name: Tree #2 - 1
+  m_Name: Wide Tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17590,7 +17718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372960339}
   m_Layer: 0
-  m_Name: Tree #1 - 1.5
+  m_Name: Basic Tree 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17713,7 +17841,7 @@ GameObject:
   - component: {fileID: 1385728224}
   - component: {fileID: 1385728225}
   m_Layer: 0
-  m_Name: bush-3_15 (13)
+  m_Name: Bush 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17732,7 +17860,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1385728225
 SpriteRenderer:
@@ -19226,7 +19354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444940489}
   m_Layer: 0
-  m_Name: Mosquito
+  m_Name: Mosquito 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19497,6 +19625,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 636435204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1455053855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455053856}
+  m_Layer: 0
+  m_Name: Tree Archs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455053856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455053855}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 615884897}
+  - {fileID: 1905110133}
+  - {fileID: 1273674247}
+  m_Father: {fileID: 988184636}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1455236452
 GameObject:
   m_ObjectHideFlags: 0
@@ -19581,6 +19743,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1458307365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1458307366}
+  m_Layer: 0
+  m_Name: Bushes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1458307366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458307365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1959882231}
+  - {fileID: 547977411}
+  - {fileID: 920764594}
+  - {fileID: 1215741079}
+  - {fileID: 1514682276}
+  - {fileID: 1385728224}
+  - {fileID: 466396326}
+  - {fileID: 1204468929}
+  - {fileID: 1068957123}
+  - {fileID: 751614514}
+  - {fileID: 999094999}
+  - {fileID: 2006053559}
+  - {fileID: 175317826}
+  - {fileID: 240328839}
+  m_Father: {fileID: 1622306565}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1459264432
 GameObject:
   m_ObjectHideFlags: 0
@@ -19676,7 +19883,7 @@ GameObject:
   - component: {fileID: 1463059292}
   - component: {fileID: 1463059293}
   m_Layer: 0
-  m_Name: log_objects_34
+  m_Name: Log 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20013,7 +20220,7 @@ GameObject:
   - component: {fileID: 1473873414}
   - component: {fileID: 1473873413}
   m_Layer: 0
-  m_Name: hill-2_6 (1)
+  m_Name: Hill 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20180,7 +20387,7 @@ GameObject:
   - component: {fileID: 1484522374}
   - component: {fileID: 1484522375}
   m_Layer: 0
-  m_Name: flowers-white-3_17
+  m_Name: White Flower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20195,11 +20402,11 @@ Transform:
   m_GameObject: {fileID: 1484522373}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.83, y: -0.18, z: 0}
+  m_LocalPosition: {x: -38.830006, y: -0.18000007, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 741701026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1484522375
 SpriteRenderer:
@@ -20265,7 +20472,7 @@ GameObject:
   - component: {fileID: 1491752944}
   - component: {fileID: 1491752943}
   m_Layer: 0
-  m_Name: hill-3_6
+  m_Name: Hill 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20434,7 +20641,7 @@ GameObject:
   - component: {fileID: 1492583171}
   - component: {fileID: 1492583172}
   m_Layer: 0
-  m_Name: Rock - Small Grey
+  m_Name: Small Rock 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20453,7 +20660,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1108828833}
+  m_Father: {fileID: 622172039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1492583172
 SpriteRenderer:
@@ -20754,6 +20961,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 671327514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1511522269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1511522270}
+  m_Layer: 0
+  m_Name: Single Platforms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1511522270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511522269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1158281211}
+  - {fileID: 1624230606}
+  m_Father: {fileID: 988184636}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514682275
 GameObject:
   m_ObjectHideFlags: 0
@@ -20765,7 +21005,7 @@ GameObject:
   - component: {fileID: 1514682276}
   - component: {fileID: 1514682277}
   m_Layer: 0
-  m_Name: bush-3_15 (11)
+  m_Name: Bush 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20784,7 +21024,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1514682277
 SpriteRenderer:
@@ -21269,7 +21509,7 @@ GameObject:
   - component: {fileID: 1565545631}
   - component: {fileID: 1565545632}
   m_Layer: 0
-  m_Name: use8948-5 (7)
+  m_Name: Background 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21284,7 +21524,7 @@ Transform:
   m_GameObject: {fileID: 1565545630}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.57, y: 0.099410534, z: 10.1030855}
+  m_LocalPosition: {x: 28.150002, y: 0.119999886, z: 10.1030855}
   m_LocalScale: {x: 2.2142746, y: 2.2142746, z: 2.2142746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21542,7 +21782,6 @@ Transform:
   - {fileID: 383836517}
   - {fileID: 1403456752}
   - {fileID: 1123434692}
-  - {fileID: 1706920148}
   m_Father: {fileID: 225758848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1588454575
@@ -21826,27 +22065,9 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 685575009}
-  - {fileID: 1959882231}
-  - {fileID: 547977411}
-  - {fileID: 920764594}
-  - {fileID: 1215741079}
-  - {fileID: 1514682276}
-  - {fileID: 1385728224}
-  - {fileID: 466396326}
-  - {fileID: 1204468929}
-  - {fileID: 1068957123}
-  - {fileID: 751614514}
-  - {fileID: 999094999}
-  - {fileID: 2006053559}
-  - {fileID: 175317826}
-  - {fileID: 240328839}
-  - {fileID: 725978562}
-  - {fileID: 1484522374}
-  - {fileID: 511194722}
-  - {fileID: 2114866862}
-  - {fileID: 2013047698}
-  - {fileID: 483855505}
+  - {fileID: 741701026}
+  - {fileID: 1458307366}
+  - {fileID: 1083796975}
   m_Father: {fileID: 1408217294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1624230605
@@ -21859,7 +22080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624230606}
   m_Layer: 0
-  m_Name: Single Platform (1)
+  m_Name: Single Platform 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21873,15 +22094,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624230605}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.13, y: 1.84, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.130001, y: 1.8399999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2120971661}
   - {fileID: 768080732}
   - {fileID: 1954848521}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 1511522270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653848349
 GameObject:
@@ -22267,7 +22488,7 @@ GameObject:
   - component: {fileID: 1691071645}
   - component: {fileID: 1691071644}
   m_Layer: 0
-  m_Name: top-soil-2_6
+  m_Name: 'Grass '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22435,7 +22656,7 @@ GameObject:
   - component: {fileID: 1698700830}
   - component: {fileID: 1698700829}
   m_Layer: 0
-  m_Name: dirt-2_2 (2)
+  m_Name: Hill 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22618,11 +22839,11 @@ Transform:
   m_GameObject: {fileID: 1706920147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.794, y: -1.345, z: 0.009511752}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 0.0026667914, y: -0.2886667, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1588237035}
+  m_Father: {fileID: 1123434692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1706920149
 SpriteRenderer:
@@ -22686,7 +22907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729173020}
   m_Layer: 0
-  m_Name: Tree #3 - 1 (2)
+  m_Name: Tall Tree 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22899,7 +23120,7 @@ GameObject:
   - component: {fileID: 1739833673}
   - component: {fileID: 1739833675}
   m_Layer: 0
-  m_Name: underground-2_2
+  m_Name: Underground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23028,7 +23249,7 @@ GameObject:
   - component: {fileID: 1740713961}
   - component: {fileID: 1740713962}
   m_Layer: 0
-  m_Name: use8948-5 (1)
+  m_Name: Background 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23113,7 +23334,7 @@ GameObject:
   - component: {fileID: 1747039528}
   - component: {fileID: 1747039527}
   m_Layer: 0
-  m_Name: hill-2_6 (2)
+  m_Name: Hill 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24036,7 +24257,7 @@ GameObject:
   - component: {fileID: 1832608507}
   - component: {fileID: 1832608508}
   m_Layer: 0
-  m_Name: log_objects_43
+  m_Name: Log 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24203,7 +24424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864669507}
   m_Layer: 0
-  m_Name: Tree #3 - 1 (1)
+  m_Name: Tall Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24414,7 +24635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884875550}
   m_Layer: 0
-  m_Name: Mosquito (4)
+  m_Name: Mosquito 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24610,7 +24831,7 @@ GameObject:
   - component: {fileID: 1905110135}
   - component: {fileID: 1905110134}
   m_Layer: 0
-  m_Name: Tree Arch (1)
+  m_Name: Tree Arch 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24629,7 +24850,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 1455053856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1905110134
 PolygonCollider2D:
@@ -24904,7 +25125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915674942}
   m_Layer: 0
-  m_Name: Double Platform (2)
+  m_Name: Double Platform 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24918,8 +25139,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915674941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.54, y: -0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24928,7 +25149,7 @@ Transform:
   - {fileID: 118397860}
   - {fileID: 585915752}
   - {fileID: 820212996}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 2040397792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1922124151
 GameObject:
@@ -25499,7 +25720,7 @@ GameObject:
   - component: {fileID: 1959882231}
   - component: {fileID: 1959882232}
   m_Layer: 0
-  m_Name: bush-3_15
+  m_Name: Bush 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25518,7 +25739,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1959882232
 SpriteRenderer:
@@ -26418,7 +26639,7 @@ GameObject:
   - component: {fileID: 2006053559}
   - component: {fileID: 2006053560}
   m_Layer: 0
-  m_Name: bush-3_15 (5)
+  m_Name: Bush 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26437,7 +26658,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1458307366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2006053560
 SpriteRenderer:
@@ -26586,7 +26807,7 @@ GameObject:
   - component: {fileID: 2013047698}
   - component: {fileID: 2013047699}
   m_Layer: 0
-  m_Name: flower_objects_26
+  m_Name: Grass Flower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26605,7 +26826,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 741701026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2013047699
 SpriteRenderer:
@@ -26995,6 +27216,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2040397791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040397792}
+  m_Layer: 0
+  m_Name: Double Platforms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040397792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040397791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1079299299}
+  - {fileID: 397111126}
+  - {fileID: 404761917}
+  - {fileID: 1915674942}
+  m_Father: {fileID: 988184636}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043625344
 GameObject:
   m_ObjectHideFlags: 0
@@ -27174,7 +27430,7 @@ GameObject:
   - component: {fileID: 2054960031}
   - component: {fileID: 2054960030}
   m_Layer: 0
-  m_Name: dirt-2_2 (4)
+  m_Name: Hill 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27257,7 +27513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062257410}
   m_Layer: 0
-  m_Name: Mosquito (2)
+  m_Name: Mosquito 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27376,7 +27632,7 @@ GameObject:
   - component: {fileID: 2084687938}
   - component: {fileID: 2084687939}
   m_Layer: 0
-  m_Name: Rock - Small Brown
+  m_Name: Small Rock 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27395,7 +27651,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1108828833}
+  m_Father: {fileID: 622172039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2084687939
 SpriteRenderer:
@@ -27662,7 +27918,7 @@ GameObject:
   - component: {fileID: 2108022444}
   - component: {fileID: 2108022445}
   m_Layer: 0
-  m_Name: Rock - Tall Grey
+  m_Name: Tall Rock 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27681,7 +27937,7 @@ Transform:
   m_LocalScale: {x: 0.84, y: 0.84, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1108828833}
+  m_Father: {fileID: 566983941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2108022445
 SpriteRenderer:
@@ -27830,7 +28086,7 @@ GameObject:
   - component: {fileID: 2114866862}
   - component: {fileID: 2114866863}
   m_Layer: 0
-  m_Name: mushrooms-3_16
+  m_Name: Mushroom 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27845,11 +28101,11 @@ Transform:
   m_GameObject: {fileID: 2114866861}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.83, y: 0.36, z: 0}
+  m_LocalPosition: {x: 58.83, y: 0.36000013, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1622306565}
+  m_Father: {fileID: 1083796975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2114866863
 SpriteRenderer:
