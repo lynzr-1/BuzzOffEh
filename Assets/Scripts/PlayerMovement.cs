@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip movementSound;
     public AudioClip attackSound;
+    public AudioClip speedBoostSound; //Sound for the speed boost power up
+    public AudioClip healthHeartSound; //Sound for health heart pick up
     public Transform attackPoint;
     public float attackRange = 1f;
 
@@ -148,17 +150,42 @@ public class Player : MonoBehaviour
     {
 
         //AudioSource audioSource = gameObject.AddComponent<AudioSource>() as AudioSource;
-        //AudioClip powerUpSound = Resources.Load<AudioClip>("Sounds/Powerup14");
+        //AudioClip powerUpSound = Resources.Load<AudioClip>("Assets/Audio/Consumables/NanaimoBar.mp3");
 
         if (collision.gameObject.CompareTag("CanBePickedUp"))
         {
-            //audioSource.PlayOneShot(powerUpSound);
-            maxSpeed = 6.0f;
-            speedBoost = true;
-            StartCoroutine(PowerUpCooldown());
-            Destroy(collision.gameObject);
-            collision.gameObject.SetActive(false);
+            Item hitObject = collision.gameObject.GetComponent<Consumables>().item;
+
+            if (hitObject != null)
+            {
+
+                print("Blaine picked up a " + hitObject.ObjectName);
+
+                switch (hitObject.itemType)
+                {
+                    case Item.ItemType.NANAIMO:
+                        audioSource.PlayOneShot(speedBoostSound);
+                        maxSpeed = 6.0f;
+                        speedBoost = true;
+                        StartCoroutine(PowerUpCooldown());
+                        break;
+                    case Item.ItemType.HEALTH:
+                        audioSource.PlayOneShot(healthHeartSound);
+                        AdjustHitPoints(hitObject.quantity);
+                        break;
+                    default:
+                        break;
+                }
+
+                collision.gameObject.SetActive(false);
+            }           
         }
+    }
+
+    public void AdjustHitPoints(int amount)
+    {
+       // hitPoints = AdjustHitPoints + amount;
+       // print("Adjusted hit points by " + amount + ". Health is now " + hitPoints);
     }
 
     IEnumerator PowerUpCooldown()
