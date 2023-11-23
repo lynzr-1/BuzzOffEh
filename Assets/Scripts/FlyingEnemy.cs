@@ -5,6 +5,8 @@ using UnityEngine;
 public class FlyingEnemy : MonoBehaviour
 {
     public float speed;
+    public int maxHealth = 100;
+    int currentHealth;
     public bool chase = false;
     public Transform startingPoint;
     private GameObject player;
@@ -13,6 +15,7 @@ public class FlyingEnemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -26,7 +29,6 @@ public class FlyingEnemy : MonoBehaviour
             ReturnStartPoint();
         Flip();
     }
-
     private void Chase()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
@@ -43,5 +45,24 @@ public class FlyingEnemy : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 0);
         else
             transform.rotation = Quaternion.Euler(0, 180, 0);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth =- damage;
+
+        if (currentHealth <= 0)
+        {
+            Death();
+        }
+    }
+
+    void Death()
+    {
+        Debug.Log("Enemy died!");
+
+        // Death animation
+
+        // Disable enemy
     }
 }

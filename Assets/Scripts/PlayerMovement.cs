@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public float maxSpeed = 3.4f;
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
+    public int attackDamage = 40;
     public Camera mainCamera;
     bool facingRight = true;
     float moveDirection = 0;
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     public AudioClip healthHeartSound; //Sound for health heart pick up
     public Transform attackPoint;
     public float attackRange = 1f;
+    public LayerMask enemyLayers;
 
     public bool speedBoost; //bool variable for power up cooldown
 
@@ -87,9 +89,18 @@ public class Player : MonoBehaviour
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
-        // Attacking
         if (Input.GetMouseButtonDown(0))
         {
+            if (attackPoint == null)
+            {
+                Debug.LogWarning("Attack point not assigned!");
+            }
+
+            if (enemyLayers.value == 0)
+            {
+                Debug.LogWarning("Enemy layers not set!");
+            }
+
             Attack();
         }
 
@@ -100,10 +111,37 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Attack()
+    void Attack()
     {
+        if (attackPoint == null)
+        {
+            Debug.LogWarning("Attack point not assigned");
+            return;
+        }
+
+        if (enemyLayers.value == 0)
+        {
+            Debug.LogWarning("Enemy layers not set");
+            return;
+        }
+        
         anim.SetTrigger("Attack");
         audioSource.PlayOneShot(attackSound);
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage);
+        }
+    }
+
+    void OnDrawGizmosSelected() 
+    {
+        if (attackPoint == null)
+        return;
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     void FixedUpdate()

@@ -163,6 +163,11 @@ Transform:
   - {fileID: 443692033}
   m_Father: {fileID: 362808044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &15054770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 2783992869262979233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &17743704
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +799,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &60789752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 216248074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71894610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 99141543}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flying Mosquitos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1597,10 +1607,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Name
       value: Mosquito2
       objectReference: {fileID: 0}
+    - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 972724637}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2870,10 +2896,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Name
       value: Mosquito
       objectReference: {fileID: 0}
+    - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 60789752}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5701,7 +5743,7 @@ GameObject:
   - component: {fileID: 462426215}
   - component: {fileID: 462426216}
   - component: {fileID: 462426217}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BlaineFetzky
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5720,7 +5762,8 @@ Transform:
   m_LocalPosition: {x: -2.8528633, y: -0.3375877, z: 10.045233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 835706828}
   m_Father: {fileID: 1307305297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462426209
@@ -5738,14 +5781,18 @@ MonoBehaviour:
   maxSpeed: 3.4
   jumpHeight: 6.5
   gravityScale: 1.5
+  attackDamage: 40
   mainCamera: {fileID: 519420031}
   audioSource: {fileID: 462426216}
   movementSound: {fileID: 8300000, guid: 2e5ab8841b0ad104d9e3d0761e2a933f, type: 3}
   attackSound: {fileID: 8300000, guid: 1e846b8c4fe497446b68f58f5beae480, type: 3}
   speedBoostSound: {fileID: 8300000, guid: d2137ea04f5e7e64ab66ad2a2be3389e, type: 3}
   healthHeartSound: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-  attackPoint: {fileID: 462426208}
+  attackPoint: {fileID: 835706828}
   attackRange: 1
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 1024
   speedBoost: 0
 --- !u!70 &462426210
 CapsuleCollider2D:
@@ -10661,6 +10708,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &835706827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835706828}
+  m_Layer: 11
+  m_Name: AttackBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &835706828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835706827}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.769, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 462426208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837294515
 GameObject:
   m_ObjectHideFlags: 0
@@ -11255,10 +11333,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Name
       value: Mosquito3
       objectReference: {fileID: 0}
+    - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 1408280053}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11401,10 +11495,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Name
       value: Mosquito
       objectReference: {fileID: 0}
+    - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 1645137405}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12214,6 +12324,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &972724637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 143828961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &988184635
 GameObject:
   m_ObjectHideFlags: 0
@@ -18013,6 +18128,11 @@ Transform:
   - {fileID: 461529928}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1408280053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 866452626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1418921605
 GameObject:
   m_ObjectHideFlags: 0
@@ -18265,6 +18385,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1438206413 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 1675904948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1438544236
 GameObject:
   m_ObjectHideFlags: 0
@@ -20800,6 +20925,11 @@ Transform:
   - {fileID: 1954848521}
   m_Father: {fileID: 1511522270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1645137405 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 901896622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653848349
 GameObject:
   m_ObjectHideFlags: 0
@@ -21137,10 +21267,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Name
       value: Mosquito
       objectReference: {fileID: 0}
+    - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 1438206413}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26763,10 +26909,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Name
       value: Mosquito
       objectReference: {fileID: 0}
+    - target: {fileID: 9077398007324671363, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 15054770}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
