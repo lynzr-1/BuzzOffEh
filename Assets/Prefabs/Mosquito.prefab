@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  maxHealth: 100
   chase: 0
   startingPoint: {fileID: 3145620007031311562}
 --- !u!95 &4632866236265452262
@@ -382,7 +383,7 @@ GameObject:
   - component: {fileID: 9131867296231253386}
   m_Layer: 10
   m_Name: Mosquito
-  m_TagString: Untagged
+  m_TagString: Mosquito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -418,5 +419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  maxHealth: 100
   chase: 0
   startingPoint: {fileID: 0}
