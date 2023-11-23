@@ -8045,6 +8045,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 1e846b8c4fe497446b68f58f5beae480, type: 3}
   speedBoostSound: {fileID: 8300000, guid: d2137ea04f5e7e64ab66ad2a2be3389e, type: 3}
   healthHeartSound: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+  enemyKillSound: {fileID: 8300000, guid: 3becec1909f194046945d85ac1077772, type: 3}
   attackPoint: {fileID: 835706828}
   attackRange: 1
   hitPoints: 100
@@ -11647,6 +11648,11 @@ PolygonCollider2D:
       - {x: 0.162, y: 0.39600003}
       - {x: 0.16000001, y: 0.39800003}
   m_UseDelaunayMesh: 0
+--- !u!82 &722777668 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3961383650530855598, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+  m_PrefabInstance: {fileID: 2783992869262979233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &723369411
 GameObject:
   m_ObjectHideFlags: 0
@@ -30875,6 +30881,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e5b13381d4d6caf438e1a4d5eb219a2a, type: 3}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 722777668}
     - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: startingPoint
       value: 

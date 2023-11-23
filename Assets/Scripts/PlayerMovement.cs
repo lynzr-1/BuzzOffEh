@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     public AudioClip attackSound;
     public AudioClip speedBoostSound; //Sound for the speed boost power up
     public AudioClip healthHeartSound; //Sound for health heart pick up
+    public AudioClip enemyKillSound; //Sound for defeating an enemy
     public Transform attackPoint;
     public float attackRange = 1f;
 
@@ -121,6 +122,7 @@ public class Player : MonoBehaviour
                 audioSource.PlayOneShot(attackSound);
                 AdjustHitPoints(5);
                 Destroy(enemy.gameObject);
+                audioSource.PlayOneShot(enemyKillSound);
                 print("Blaine killed a mosquito");
             }
         } 

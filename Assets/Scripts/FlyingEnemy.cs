@@ -60,9 +60,5 @@ public class FlyingEnemy : MonoBehaviour
     void Death()
     {
         Debug.Log("Enemy died!");
-
-        // Death animation
-
-        // Disable enemy
     }
 }
