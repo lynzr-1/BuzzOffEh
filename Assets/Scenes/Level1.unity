@@ -8001,6 +8001,7 @@ GameObject:
   - component: {fileID: 462426215}
   - component: {fileID: 462426216}
   - component: {fileID: 462426217}
+  - component: {fileID: 462426218}
   m_Layer: 11
   m_Name: BlaineFetzky
   m_TagString: Player
@@ -8048,7 +8049,6 @@ MonoBehaviour:
   enemyKillSound: {fileID: 8300000, guid: 3becec1909f194046945d85ac1077772, type: 3}
   attackPoint: {fileID: 835706828}
   attackRange: 1
-  hitPoints: 100
   speedBoost: 0
 --- !u!70 &462426210
 CapsuleCollider2D:
@@ -8377,6 +8377,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &462426218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462426207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2c61263ce483649955928074a4eeca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1 &466396325
 GameObject:
   m_ObjectHideFlags: 0
