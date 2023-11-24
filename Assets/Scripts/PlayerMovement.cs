@@ -167,7 +167,7 @@ public class Player : MonoBehaviour
         audioSource.pitch = Mathf.Lerp(0.8f, 1.2f, normalizedSpeed);
 
         // Play movement sound
-        if (moveDirection != 0 && isGrounded && !audioSource.isPlaying)
+        if (moveDirection != 0 && isGrounded && !audioSource.isPlaying && Mathf.Abs(r2d.velocity.y) < 0.01f)
         {
             audioSource.PlayOneShot(movementSound);
         }
