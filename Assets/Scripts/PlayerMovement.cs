@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
             if (enemy.gameObject.CompareTag("Mosquito"))
             {
                 audioSource.PlayOneShot(attackSound);
-                AdjustHitPoints(5);
+                //AdjustHitPoints(5);
                 audioSource.PlayOneShot(enemyKillSound);
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);  
@@ -194,7 +194,7 @@ public class Player : MonoBehaviour
                         break;
                     case Item.ItemType.HEALTH:
                         audioSource.PlayOneShot(healthHeartSound);
-                        GetComponent<HealthManager>().AdjustHitPoints(hitObject.quantity);
+                        GetComponent<HealthManager>().AdjustHitPoints(+5);
                         break;
                     default:
                         break;

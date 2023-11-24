@@ -50,9 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 1036106037
     locked: 0
-  - name: Objects
-    uniqueID: 3973918395
-    locked: 0
   - name: Ground
     uniqueID: 1757666071
     locked: 0
@@ -61,6 +58,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3972364535
+    locked: 0
+  - name: Objects
+    uniqueID: 3973918395
     locked: 0
   - name: Midground
     uniqueID: 3251268325

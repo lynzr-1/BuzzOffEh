@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealthHeart
   m_EditorClassIdentifier: 
   ObjectName: HealthHeart
-  sprite: {fileID: 21300000, guid: 4df3373e5f0b3434cb1246b80097f6a8, type: 3}
+  sprite: {fileID: 1875474461, guid: 23c9726e0d0d13f488f10caa329c4927, type: 3}
   quantity: 0
   stackable: 0
   itemType: 1
