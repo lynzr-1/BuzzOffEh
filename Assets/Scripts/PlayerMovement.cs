@@ -203,7 +203,9 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(healthHeartSound);
             GetComponent<HealthManager>().AdjustHitPoints(-1);
             print("Blaine got bitten by a mosquito");
-            // Mosquito retreats for 3 seconds
+            // Tint mosquito with red transparency
+            collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 0.4f);            
+            // Mosquito retreats for a few seconds
             collision.gameObject.GetComponent<FlyingEnemy>().chase = false;
             // Add 3 second timer then mosquito chases player again
             StartCoroutine(wait4it(collision));
@@ -213,6 +215,8 @@ public class Player : MonoBehaviour
     IEnumerator wait4it(Collider2D collision)
     {
         yield return new WaitForSeconds(3);
+        // Untint mosquito
+        collision.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         collision.gameObject.GetComponent<FlyingEnemy>().chase = true;
     }
 
