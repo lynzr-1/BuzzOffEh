@@ -84,15 +84,14 @@ public class Player : MonoBehaviour
         }
 
         // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && Mathf.Abs(r2d.velocity.y) < 0.01f)
         {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
-
+        // Attacking
         if (Time.time >= attackCooldown) 
         { 
-            // Attacking
             if (Input.GetMouseButtonDown(0))
             {
                 Attack();
