@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
         {
             cameraPos = mainCamera.transform.position;
         }
+        
     }
 
     // Update is called once per frame
@@ -202,7 +203,17 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(healthHeartSound);
             GetComponent<HealthManager>().AdjustHitPoints(-1);
             print("Blaine got bitten by a mosquito");
+            // Mosquito retreats for 3 seconds
+            collision.gameObject.GetComponent<FlyingEnemy>().chase = false;
+            // Add 3 second timer then mosquito chases player again
+            StartCoroutine(wait4it(collision));
         }
+    }
+
+    IEnumerator wait4it(Collider2D collision)
+    {
+        yield return new WaitForSeconds(3);
+        collision.gameObject.GetComponent<FlyingEnemy>().chase = true;
     }
 
     public void AdjustHitPoints(int amount)

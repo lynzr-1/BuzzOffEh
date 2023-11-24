@@ -35,6 +35,12 @@ public class FlyingEnemy : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
+    // Mosquito retreats for 3 seconds
+    private void Retreat()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
+    }
+
     private void ReturnStartPoint()
     {
         transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
@@ -48,14 +54,16 @@ public class FlyingEnemy : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            //audioSource.PlayOneShot(healthHeartSound);
             collision.gameObject.GetComponent<HealthManager>().AdjustHitPoints(-1);
-            // Handle other logic
+            print("Blaine2 got bitten by a mosquito");
+            Retreat();
         }
-    }
+    }  */
 
     /* public void TakeDamage(int damage)
     {
