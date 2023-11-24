@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     public AudioClip enemyKillSound;
     public Transform attackPoint;
     public float attackRange = 1f;
+    public float attackRate = 2f;
+    float attackCooldown = 0f;
 
     // Health and score
     public bool speedBoost;
@@ -87,11 +89,17 @@ public class Player : MonoBehaviour
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
-        // Attacking
-        if (Input.GetMouseButtonDown(0))
-        {
-            Attack();
+
+        if (Time.time >= attackCooldown) 
+        { 
+            // Attacking
+            if (Input.GetMouseButtonDown(0))
+            {
+                Attack();
+                attackCooldown = Time.time + 1f / attackRate;
+            }
         }
+        
 
         // Camera follow
         if (mainCamera)
