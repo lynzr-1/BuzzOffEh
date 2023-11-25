@@ -396,6 +396,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -2056,6 +2060,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -2377,6 +2385,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -2460,6 +2476,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -4098,6 +4118,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -9963,6 +9987,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -13738,6 +13766,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -14678,6 +14710,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -15053,6 +15089,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -16982,6 +17022,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -18768,6 +18812,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -19960,6 +20008,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -20455,6 +20507,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -21449,6 +21505,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -22687,6 +22747,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -27903,6 +27967,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -28785,6 +28853,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -29927,6 +29999,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -30795,6 +30871,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
@@ -33112,6 +33192,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -35410,6 +35494,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -36275,6 +36363,10 @@ PrefabInstance:
     - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903703893427961364, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: m_TagString
+      value: ChaseTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8606382552352009431, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: m_Layer

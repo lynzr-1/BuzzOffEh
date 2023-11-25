@@ -35,12 +35,6 @@ public class FlyingEnemy : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
-    // Mosquito retreats for 3 seconds
-    private void Retreat()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
-    }
-
     private void ReturnStartPoint()
     {
         transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);

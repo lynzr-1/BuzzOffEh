@@ -24,7 +24,10 @@ public class HealthManager : MonoBehaviour
 
         // Death animation
 
+        // Load Defeat scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+
         // Disable player
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

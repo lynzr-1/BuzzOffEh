@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     public float attackRange = 1f;
     public float attackRate = 2f;
     float attackCooldown = 0f;
+    private bool isChasing = true;
 
     // Health and score
     public bool speedBoost;
@@ -211,20 +212,56 @@ public class Player : MonoBehaviour
             GetComponent<HealthManager>().AdjustHitPoints(-1);
             print("Blaine got bitten by a mosquito");
             // Tint mosquito with red transparency
-            collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 0.4f);            
+                collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1f);            
             // Mosquito retreats for a few seconds
             collision.gameObject.GetComponent<FlyingEnemy>().chase = false;
             // Add 3 second timer then mosquito chases player again
+            isChasing = true;
             StartCoroutine(wait4it(collision));
         }
     }
 
+    // If player exits chase trigger zone, enemy stops chasing player
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("ChaseTrigger"))
+        {
+            print("Blaine left enemy territory");
+
+            // Stop wait4it coroutine by name
+            StopCoroutine("wait4it");
+
+            // Stop chase if FlyingEnemy component exists
+            FlyingEnemy flyingEnemy = collision.gameObject.GetComponent<FlyingEnemy>();
+            if (flyingEnemy != null)
+            {
+                flyingEnemy.chase = false;
+                
+            }
+               
+            // Set the flag to stop the coroutine            
+            isChasing = false;
+        }
+    }
+
+
     IEnumerator wait4it(Collider2D collision)
     {
-        yield return new WaitForSeconds(3);
+        float waitTime = 2f;
+
+        while (waitTime > 0 && isChasing)
+        {
+            yield return new WaitForSeconds(0.1f); // Adjust this interval as needed
+            waitTime -= 0.1f;
+        }
+
         // Untint mosquito
         collision.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-        collision.gameObject.GetComponent<FlyingEnemy>().chase = true;
+
+        if (isChasing)
+        {
+            collision.gameObject.GetComponent<FlyingEnemy>().chase = true;
+        }
     }
 
     public void AdjustHitPoints(int amount)
