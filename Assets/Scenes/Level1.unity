@@ -2610,6 +2610,10 @@ PrefabInstance:
       value: Mosquito
       objectReference: {fileID: 0}
     - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131867296231253386, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
       propertyPath: startingPoint
       value: 
       objectReference: {fileID: 158115587}
