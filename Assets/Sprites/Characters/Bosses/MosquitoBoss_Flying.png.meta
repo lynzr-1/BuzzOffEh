@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dff7dbb4f1df3ce45b554794846426db
+guid: d74352ef3f8e41e449da7ca2d66b1f30
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DoubleDoubleTime_0
+      name: MosquitoBoss_Flying_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 400
+        width: 750
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4be321bdf9ef2634bacd3abdcc6f22e9
-      internalID: -652267384
+      spriteID: a8c915cb6d685f54d8a6526b4b61c913
+      internalID: -1347593855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoubleDoubleTime_1
+      name: MosquitoBoss_Flying_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 750
         y: 0
-        width: 200
-        height: 400
+        width: 750
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1221824250dfa5b4291a68009ef7136f
-      internalID: -716382661
+      spriteID: 5ea01c369cee2d640b2dce0e9bf9def4
+      internalID: 1233752481
       vertices: []
       indices: 
       edges: []
@@ -188,8 +188,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DoubleDoubleTime_0: -652267384
-      DoubleDoubleTime_1: -716382661
+      MosquitoBoss_Flying_0: -1347593855
+      MosquitoBoss_Flying_1: 1233752481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

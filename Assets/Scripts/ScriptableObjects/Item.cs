@@ -12,7 +12,8 @@ public class Item : ScriptableObject
     public enum ItemType
     {
         NANAIMO,
-        HEALTH
+        HEALTH,
+        DOUBLE_DOUBLE
     }
     public ItemType itemType;
 

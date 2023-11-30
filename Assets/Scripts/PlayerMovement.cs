@@ -35,6 +35,10 @@ public class Player : MonoBehaviour
     // Health and score
     public bool speedBoost;
 
+    [SerializeField]
+    private bool powerUpReady; //bool variable for power up cooldown
+    public Transform HealthHeart;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +54,8 @@ public class Player : MonoBehaviour
         {
             cameraPos = mainCamera.transform.position;
         }
-        
+        StartCoroutine(PowerUpCooldown());
+
     }
 
     // Update is called once per frame
@@ -127,8 +132,24 @@ public class Player : MonoBehaviour
                 audioSource.PlayOneShot(attackSound);
                 //AdjustHitPoints(5);
                 audioSource.PlayOneShot(enemyKillSound);
+
+                //random powerup drops
+                if (powerUpReady == true)
+                {
+                    //implement random chance for mosquitos to drop a health heart upon death
+                    int randomChance = Random.Range(1, 101);
+
+                    if (randomChance < 40)
+                    {
+                        Instantiate(HealthHeart, enemy.transform.position, enemy.transform.rotation);
+                        powerUpReady = false;
+                        StartCoroutine(PowerUpCooldown());
+                        Debug.Log("Power up on Cooldown");
+                    }
+                }
+
                 // Deactivate instead of destroying
-                enemy.gameObject.SetActive(false);  
+                enemy.gameObject.SetActive(false);
                 print("Blaine killed a mosquito");
             }
         }
@@ -186,15 +207,22 @@ public class Player : MonoBehaviour
 
                 switch (hitObject.itemType)
                 {
-                    case Item.ItemType.NANAIMO:
+                    case Item.ItemType.NANAIMO: //speed boost for 5 seconds
                         audioSource.PlayOneShot(speedBoostSound);
-                        maxSpeed = 6.0f;
+                        maxSpeed = 5.0f;
                         speedBoost = true;
-                        StartCoroutine(PowerUpCooldown());
+                        StartCoroutine(NanaimoCooldown());
                         break;
-                    case Item.ItemType.HEALTH:
+                    case Item.ItemType.HEALTH: //5hp restored
                         audioSource.PlayOneShot(healthHeartSound);
                         GetComponent<HealthManager>().AdjustHitPoints(+5);
+                        break;
+                    case Item.ItemType.DOUBLE_DOUBLE: //20hp restored + double speed for 10 seconds
+                        audioSource.PlayOneShot(healthHeartSound);
+                        GetComponent<HealthManager>().AdjustHitPoints(+20);
+                        maxSpeed = 6.8f;
+                        speedBoost = true;
+                        StartCoroutine(DoubleDoubleCooldown());
                         break;
                     default:
                         break;
@@ -209,10 +237,10 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Mosquito"))
         {
             audioSource.PlayOneShot(healthHeartSound);
-            GetComponent<HealthManager>().AdjustHitPoints(-1);
+            GetComponent<HealthManager>().AdjustHitPoints(-30);
             print("Blaine got bitten by a mosquito");
-            // Tint mosquito with red transparency
-                collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1f);            
+            // Tint mosquito with red transparency - causes them to be transparent so commenting out for now
+            //collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1f);            
             // Mosquito retreats for a few seconds
             collision.gameObject.GetComponent<FlyingEnemy>().chase = false;
             // Add 3 second timer then mosquito chases player again
@@ -244,7 +272,6 @@ public class Player : MonoBehaviour
         }
     }
 
-
     IEnumerator wait4it(Collider2D collision)
     {
         float waitTime = 2f;
@@ -269,11 +296,25 @@ public class Player : MonoBehaviour
         GetComponent<HealthManager>().AdjustHitPoints(amount);
     }
 
-    IEnumerator PowerUpCooldown()
+    IEnumerator NanaimoCooldown()
     {
         yield return new WaitForSeconds(5.0f);
         speedBoost = false;
         maxSpeed = 3.4f;
+        powerUpReady = true;
+    }
+    IEnumerator DoubleDoubleCooldown()
+    {
+        yield return new WaitForSeconds(10.0f);
+        speedBoost = false;
+        maxSpeed = 3.4f;
+        powerUpReady = true;
+    }
+    IEnumerator PowerUpCooldown() //cooldown function for power ups
+    {
+        yield return new WaitForSeconds(Random.Range(5, 7));
+        powerUpReady = true;
+        Debug.Log("Power up Ready");
     }
 }
 
