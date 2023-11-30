@@ -8,6 +8,7 @@ TagManager:
   - NanaimoBar
   - Mosquito
   - ChaseTrigger
+  - MosquitoBoss
   layers:
   - Default
   - TransparentFX

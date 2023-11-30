@@ -151,6 +151,16 @@ public class Player : MonoBehaviour
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);
                 print("Blaine killed a mosquito");
+            } 
+            
+            if (enemy.gameObject.CompareTag("MosquitoBoss"))
+            {
+                audioSource.PlayOneShot(attackSound);
+                //AdjustHitPoints(5);
+                audioSource.PlayOneShot(enemyKillSound);
+                // Deactivate instead of destroying
+                enemy.gameObject.SetActive(false);
+                print("Blaine killed a MosquitoBoss");         
             }
         }
     }
@@ -233,8 +243,7 @@ public class Player : MonoBehaviour
         }
 
         // If player collides with a mosquito, he gets bitten and loses health or score
-
-        if (collision.gameObject.CompareTag("Mosquito"))
+        if (collision.gameObject.CompareTag("Mosquito") || collision.gameObject.CompareTag("MosquitoBoss"))
         {
             audioSource.PlayOneShot(healthHeartSound);
             GetComponent<HealthManager>().AdjustHitPoints(-30);
@@ -246,6 +255,19 @@ public class Player : MonoBehaviour
             // Add 3 second timer then mosquito chases player again
             isChasing = true;
             StartCoroutine(wait4it(collision));
+        }
+
+        // If player reaches finish line (camping tent)
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            print("Blaine reached the finish line");
+      
+            // Load next scene
+            // Get current scene index
+            // int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+            // UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + 1);
+            // Or Win screen
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Win");
         }
     }
 
