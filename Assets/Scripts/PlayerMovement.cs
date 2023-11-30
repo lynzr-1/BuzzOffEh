@@ -310,9 +310,9 @@ public class Player : MonoBehaviour
         maxSpeed = 3.4f;
         powerUpReady = true;
     }
-    IEnumerator PowerUpCooldown() //cooldown function for power ups
+    IEnumerator PowerUpCooldown()
     {
-        yield return new WaitForSeconds(Random.Range(5, 7));
+        yield return new WaitForSeconds(Random.Range(4, 6));
         powerUpReady = true;
         Debug.Log("Power up Ready");
     }
