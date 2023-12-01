@@ -191,7 +191,7 @@ public class Player : MonoBehaviour
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(r2d.velocity.x));
-
+        anim.SetBool("OnGround", isGrounded);
         // Calculate normalized speed
         float normalizedSpeed = Mathf.Abs(r2d.velocity.x) / maxSpeed;
 

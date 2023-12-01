@@ -9,6 +9,8 @@ TagManager:
   - Mosquito
   - ChaseTrigger
   - MosquitoBoss
+  - Grass
+  - Wood
   layers:
   - Default
   - TransparentFX
