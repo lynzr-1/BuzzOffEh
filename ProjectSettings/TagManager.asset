@@ -11,6 +11,7 @@ TagManager:
   - MosquitoBoss
   - Grass
   - Wood
+  - HealthMeter
   layers:
   - Default
   - TransparentFX
