@@ -5842,6 +5842,7 @@ GameObject:
   - component: {fileID: 462426210}
   - component: {fileID: 462426215}
   - component: {fileID: 462426216}
+  - component: {fileID: 462426220}
   - component: {fileID: 462426217}
   - component: {fileID: 462426218}
   m_Layer: 11
@@ -5885,7 +5886,8 @@ MonoBehaviour:
   gravityScale: 1.5
   mainCamera: {fileID: 519420031}
   audioSource: {fileID: 462426216}
-  movementSound: {fileID: 8300000, guid: 2e5ab8841b0ad104d9e3d0761e2a933f, type: 3}
+  grassWalkingSound: {fileID: 8300000, guid: 2e5ab8841b0ad104d9e3d0761e2a933f, type: 3}
+  woodWalkingSound: {fileID: 8300000, guid: 0c2c3bffda22b4547ad40547c2c902e2, type: 3}
   attackSound: {fileID: 8300000, guid: 1e846b8c4fe497446b68f58f5beae480, type: 3}
   speedBoostSound: {fileID: 8300000, guid: d2137ea04f5e7e64ab66ad2a2be3389e, type: 3}
   healthHeartSound: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
@@ -6236,6 +6238,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!82 &462426220
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462426207}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0c2c3bffda22b4547ad40547c2c902e2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &496749209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6332,6 +6430,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6425,6 +6524,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c3af7facfaddd45a4d4dd430e572fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &519420034
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d8f238908b92545459b5147aa1a93c39, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 190
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &521070083
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,7 +7746,7 @@ GameObject:
   - component: {fileID: 615884897}
   - component: {fileID: 615884896}
   - component: {fileID: 615884898}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tree Arch 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9000,6 +9195,10 @@ PrefabInstance:
     - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_Name
       value: PicnicTable 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2362850985471666979, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11286,9 +11485,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 988184636}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12680,6 +12879,10 @@ PrefabInstance:
     - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_Name
       value: PicnicTable 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2362850985471666979, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14620,7 +14823,7 @@ GameObject:
   - component: {fileID: 1273674247}
   - component: {fileID: 1273674249}
   - component: {fileID: 1273674248}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tree Arch 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15899,9 +16102,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455053856}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tree Archs
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17198,7 +17401,7 @@ GameObject:
   - component: {fileID: 1691071645}
   - component: {fileID: 1691071644}
   - component: {fileID: 1691071646}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: 'Grass '
   m_TagString: Grass
   m_Icon: {fileID: 0}
@@ -17413,7 +17616,7 @@ GameObject:
   - component: {fileID: 1739833674}
   - component: {fileID: 1739833673}
   - component: {fileID: 1739833675}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Underground
   m_TagString: Grass
   m_Icon: {fileID: 0}
@@ -20064,7 +20267,7 @@ GameObject:
   - component: {fileID: 1905110133}
   - component: {fileID: 1905110135}
   - component: {fileID: 1905110134}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tree Arch 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21747,9 +21950,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040397792}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Picnic Tables
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22928,6 +23131,10 @@ PrefabInstance:
     - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_Name
       value: PicnicTable 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2362850985471666979, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_LocalPosition.x

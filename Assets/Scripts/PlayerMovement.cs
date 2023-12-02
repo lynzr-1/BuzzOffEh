@@ -21,7 +21,8 @@ public class Player : MonoBehaviour
     Transform t;
     private Animator anim;
     public AudioSource audioSource;
-    public AudioClip movementSound;
+    public AudioClip grassWalkingSound;
+    public AudioClip woodWalkingSound;
     public AudioClip attackSound;
     public AudioClip speedBoostSound;
     public AudioClip healthHeartSound;
@@ -194,15 +195,16 @@ public class Player : MonoBehaviour
         anim.SetBool("OnGround", isGrounded);
         // Calculate normalized speed
         float normalizedSpeed = Mathf.Abs(r2d.velocity.x) / maxSpeed;
-
         // Set pitch based on normalized speed
         audioSource.pitch = Mathf.Lerp(0.8f, 1.2f, normalizedSpeed);
-
-        // Play movement sound
-        if (moveDirection != 0 && isGrounded && !audioSource.isPlaying && Mathf.Abs(r2d.velocity.y) < 0.01f)
-        {
-            audioSource.PlayOneShot(movementSound);
-        }
+            if (moveDirection != 0 && isGrounded && !audioSource.isPlaying && Mathf.Abs(r2d.velocity.y) < 0.01f)
+            {
+                audioSource.PlayOneShot(grassWalkingSound);
+            }
+       else if (moveDirection != 0 && isGrounded && !audioSource.isPlaying && Mathf.Abs(r2d.velocity.y) < 0.01f)
+            {
+                audioSource.PlayOneShot(woodWalkingSound);
+            }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
