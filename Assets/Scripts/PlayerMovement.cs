@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     // Move player in 2D space
+    public Transform playerBlaine;
     public float maxSpeed = 3.4f;
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
     public float attackRate = 2f;
     float attackCooldown = 0f;
     private bool isChasing = true;
+    public Vector3 textOffset = new Vector3(0f, 1.5f, 0f);
 
     // Health and score
     public bool speedBoost;
@@ -119,6 +121,12 @@ public class Player : MonoBehaviour
         if (mainCamera)
         {
             mainCamera.transform.position = new Vector3(t.position.x, cameraPos.y, cameraPos.z);
+        }
+
+        // Text follow 
+        if (textMsg)
+        {
+            textMsg.transform.position = playerBlaine.position + textOffset;
         }
     }
 
