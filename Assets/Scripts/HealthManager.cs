@@ -18,8 +18,7 @@ public class HealthManager : MonoBehaviour
     public void AdjustHitPoints(int amount)
     {
         hitPoints += amount;
-        print("Adjusted hit points by " + amount + " - Health is now " + hitPoints);
-
+        
         if (hitPoints == 0)
         {
             healthMeter.sprite = noHearts;
@@ -47,11 +46,8 @@ public class HealthManager : MonoBehaviour
             healthMeter.sprite = fiveHearts;
         }
 
-        // If player's health is 0, he dies
-        //if (hitPoints <= 0)
-        //{
-        //    Death();
-        //}
+        print("Adjusted hit points by " + amount + " - Health is now " + hitPoints);
+
     }
 
     public void Death()

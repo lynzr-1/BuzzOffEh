@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -35,10 +37,14 @@ public class Player : MonoBehaviour
 
     // Health and score
     public bool speedBoost;
+    public bool slowDown; //bool for syrup puddle debuff
+    public AudioClip puddleSound;
 
     [SerializeField]
     private bool powerUpReady; //bool variable for power up cooldown
     public Transform HealthHeart;
+
+    public TextMeshPro textMsg; //variable to hold messages to display to the player
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +64,8 @@ public class Player : MonoBehaviour
         }
 
         StartCoroutine(PowerUpCooldown());
+
+        textMsg.enabled = false; //start with an empty text field
     }
 
     // Update is called once per frame
@@ -149,6 +157,26 @@ public class Player : MonoBehaviour
                     }
                 }
 
+                //random messages from Blaine
+                if (textMsg.enabled == false)
+                {
+                    //implement random chance for Blaine to say something
+                    int randomChance = Random.Range(1, 101);
+
+                    if (randomChance < 10)
+                    {
+                        textMsg.enabled = true;
+                        textMsg.text = "Got 'em";
+                        StartCoroutine(textCooldown());
+                    }
+                    if (randomChance >= 21 && randomChance <= 40)
+                    {
+                        textMsg.enabled = true;
+                        textMsg.text = "Squished!";
+                        StartCoroutine(textCooldown());
+                    }
+                }
+
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);
                 print("Blaine killed a mosquito");
@@ -223,18 +251,27 @@ public class Player : MonoBehaviour
                         audioSource.PlayOneShot(speedBoostSound);
                         maxSpeed = 5.0f;
                         speedBoost = true;
+                        print("Blaine is speedy!");
+                        textMsg.enabled = true;
+                        textMsg.text = "Sugar Rush!";
                         StartCoroutine(NanaimoCooldown());
+                        StartCoroutine(textCooldown());
                         break;
                     case Item.ItemType.HEALTH: //5hp restored
                         audioSource.PlayOneShot(healthHeartSound);
                         GetComponent<HealthManager>().AdjustHitPoints(+20);
+                        print("Blaine restored health");
                         break;
                     case Item.ItemType.DOUBLE_DOUBLE: //20hp restored + double speed for 10 seconds
                         audioSource.PlayOneShot(healthHeartSound);
                         GetComponent<HealthManager>().AdjustHitPoints(+40);
                         maxSpeed = 6.8f;
                         speedBoost = true;
+                        textMsg.enabled = true;
+                        textMsg.text = "Double Double Time!";
                         StartCoroutine(DoubleDoubleCooldown());
+                        StartCoroutine(textCooldown());
+                        print("Double double time!");
                         break;
                     default:
                         break;
@@ -244,14 +281,34 @@ public class Player : MonoBehaviour
             }
         }
 
+        // If player walks through syrup puddle, speed debuff
+
+        if (collision.CompareTag("Puddle"))
+        {
+            audioSource.PlayOneShot(puddleSound);
+            maxSpeed = 0.7f;
+            slowDown = true;
+            StartCoroutine(puddleCooldown());
+            print("Blaine is slowed!");
+        }
+
         // If player collides with a mosquito, he gets bitten and loses health or score
         if (collision.gameObject.CompareTag("Mosquito") || collision.gameObject.CompareTag("MosquitoBoss"))
         {
             audioSource.PlayOneShot(healthHeartSound);
             GetComponent<HealthManager>().AdjustHitPoints(-20);
             print("Blaine got bitten by a mosquito");
-            // Tint mosquito with red transparency - causes them to be transparent so commenting out for now
-            //collision.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1f);            
+
+            //implement random chance for Blaine to say something
+            int randomChance = Random.Range(1, 101);
+
+            if (randomChance < 20)
+            {
+                textMsg.enabled = true;
+                textMsg.text = "Ouch, eh?";
+                StartCoroutine(textCooldown());
+            }
+
             // Mosquito retreats for a few seconds
             collision.gameObject.GetComponent<FlyingEnemy>().chase = false;
             // Add 3 second timer then mosquito chases player again
@@ -326,6 +383,8 @@ public class Player : MonoBehaviour
         speedBoost = false;
         maxSpeed = 3.4f;
         powerUpReady = true;
+        textMsg.enabled = false;
+        print("Speed boost gone");
     }
     IEnumerator DoubleDoubleCooldown()
     {
@@ -333,11 +392,26 @@ public class Player : MonoBehaviour
         speedBoost = false;
         maxSpeed = 3.4f;
         powerUpReady = true;
+        print("Double Double effect gone");
     }
     IEnumerator PowerUpCooldown()
     {
         yield return new WaitForSeconds(Random.Range(4, 6));
         powerUpReady = true;
-        Debug.Log("Power up Ready");
+        print("Power up ready");
+    }
+
+    IEnumerator puddleCooldown()
+    {
+        yield return new WaitForSeconds(5.0f);
+        slowDown = false;
+        maxSpeed = 3.4f;
+        print("Speed debuff gone");
+    }
+
+    IEnumerator textCooldown()
+    {
+        yield return new WaitForSeconds(3.0f);
+        textMsg.enabled = false;
     }
 }

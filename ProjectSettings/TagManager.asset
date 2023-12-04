@@ -12,6 +12,10 @@ TagManager:
   - Grass
   - Wood
   - HealthMeter
+  - Puddle
+  - SyrupBottle
+  - dripSpawn
+  - Drip
   layers:
   - Default
   - TransparentFX
