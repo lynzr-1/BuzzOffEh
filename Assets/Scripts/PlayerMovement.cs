@@ -185,6 +185,8 @@ public class Player : MonoBehaviour
                     }
                 }
 
+                GetComponent<ScoreManager>().AdjustScorePoints(+10);
+
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);
                 print("Blaine killed a mosquito");
@@ -195,6 +197,9 @@ public class Player : MonoBehaviour
                 audioSource.PlayOneShot(attackSound);
                 //AdjustHitPoints(5);
                 audioSource.PlayOneShot(enemyKillSound);
+
+                GetComponent<ScoreManager>().AdjustScorePoints(+50);
+
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);
                 print("Blaine killed a MosquitoBoss");         
@@ -259,6 +264,7 @@ public class Player : MonoBehaviour
                         audioSource.PlayOneShot(speedBoostSound);
                         maxSpeed = 5.0f;
                         speedBoost = true;
+                        GetComponent<ScoreManager>().AdjustScorePoints(+20);
                         print("Blaine is speedy!");
                         textMsg.enabled = true;
                         textMsg.text = "Sugar Rush!";
@@ -273,6 +279,7 @@ public class Player : MonoBehaviour
                     case Item.ItemType.DOUBLE_DOUBLE: //20hp restored + double speed for 10 seconds
                         audioSource.PlayOneShot(healthHeartSound);
                         GetComponent<HealthManager>().AdjustHitPoints(+40);
+                        GetComponent<ScoreManager>().AdjustScorePoints(+20);
                         maxSpeed = 6.8f;
                         speedBoost = true;
                         textMsg.enabled = true;
@@ -305,6 +312,7 @@ public class Player : MonoBehaviour
         {
             audioSource.PlayOneShot(healthHeartSound);
             GetComponent<HealthManager>().AdjustHitPoints(-20);
+            GetComponent<ScoreManager>().AdjustScorePoints(-5);
             print("Blaine got bitten by a mosquito");
 
             //implement random chance for Blaine to say something
@@ -383,6 +391,11 @@ public class Player : MonoBehaviour
     public void AdjustHitPoints(int amount)
     {
         GetComponent<HealthManager>().AdjustHitPoints(amount);
+    }
+
+    public void AdjustScorePoints(int amount)
+    {
+        GetComponent<ScoreManager>().AdjustScorePoints(amount);
     }
 
     IEnumerator NanaimoCooldown()
