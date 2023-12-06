@@ -105,6 +105,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && Mathf.Abs(r2d.velocity.y) < 0.01f)
         {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
+            Debug.Log("***JUMPING***");
         }
 
         // Attacking
@@ -213,11 +214,15 @@ public class Player : MonoBehaviour
         float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
         Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
 
+        // Use LayerMask to filter colliders with the "Ground" tag
+        int groundLayerMask = 1 << LayerMask.NameToLayer("Ground");
+
         // Check if player is grounded
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius, groundLayerMask);
 
         //Check if any of the overlapping colliders are not player collider, if so, set isGrounded to true
         isGrounded = false;
+
         if (colliders.Length > 0)
         {
             for (int i = 0; i < colliders.Length; i++)
@@ -234,8 +239,10 @@ public class Player : MonoBehaviour
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(r2d.velocity.x));
         anim.SetBool("OnGround", isGrounded);
+
         // Calculate normalized speed
         float normalizedSpeed = Mathf.Abs(r2d.velocity.x) / maxSpeed;
+        
         // Set pitch based on normalized speed
         audioSource.pitch = Mathf.Lerp(0.8f, 1.2f, normalizedSpeed);
             if (moveDirection != 0 && isGrounded && !audioSource.isPlaying && Mathf.Abs(r2d.velocity.y) < 0.01f)

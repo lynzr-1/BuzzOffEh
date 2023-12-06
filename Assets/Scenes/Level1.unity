@@ -2876,9 +2876,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1455053856}
   - {fileID: 1108828833}
-  - {fileID: 988184636}
   - {fileID: 1588237035}
+  - {fileID: 2040397792}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237581606
@@ -2893,7 +2894,7 @@ GameObject:
   - component: {fileID: 237581607}
   m_Layer: 0
   m_Name: LogEntrance
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4452,7 +4453,7 @@ GameObject:
   - component: {fileID: 335550276}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8808,7 +8809,7 @@ GameObject:
   - component: {fileID: 615884898}
   m_Layer: 12
   m_Name: Tree Arch 1
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10717,6 +10718,10 @@ PrefabInstance:
     - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_Layer
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 2362850985471666979, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12631,39 +12636,6 @@ Transform:
   - {fileID: 1295172988}
   m_Father: {fileID: 1408217294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &988184635
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 988184636}
-  m_Layer: 12
-  m_Name: Platforms
-  m_TagString: Wood
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &988184636
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988184635}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2040397792}
-  - {fileID: 1455053856}
-  m_Father: {fileID: 225758848}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1002911085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3145620007031311562, guid: 4def5e63bb6e8cd49a1f9b0ee5292744, type: 3}
@@ -14434,6 +14406,10 @@ PrefabInstance:
     - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_Layer
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 2362850985471666979, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16926,7 +16902,7 @@ GameObject:
   - component: {fileID: 1273674248}
   m_Layer: 12
   m_Name: Tree Arch 3
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18776,14 +18752,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455053855}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 615884897}
   - {fileID: 1273674247}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 225758848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1458307365
 GameObject:
@@ -25515,7 +25491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040397791}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25523,7 +25499,7 @@ Transform:
   - {fileID: 4711815913400265651}
   - {fileID: 1092381039}
   - {fileID: 751185725}
-  m_Father: {fileID: 988184636}
+  m_Father: {fileID: 225758848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2052975613 stripped
 Transform:
@@ -26739,6 +26715,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LogVariant1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8486612025601102010, guid: 972d33f8d443e9046acb02b4e1c42208, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8486612025601102010, guid: 972d33f8d443e9046acb02b4e1c42208, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27022,6 +27006,10 @@ PrefabInstance:
     - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_Layer
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536420044943739678, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 2362850985471666979, guid: 08b0a9678b03c0f46bf865f233ee15a4, type: 3}
       propertyPath: m_LocalPosition.x

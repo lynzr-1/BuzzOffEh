@@ -16,6 +16,7 @@ TagManager:
   - SyrupBottle
   - dripSpawn
   - Drip
+  - Ground
   layers:
   - Default
   - TransparentFX
