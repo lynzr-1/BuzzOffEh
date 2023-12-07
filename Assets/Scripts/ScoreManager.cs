@@ -5,14 +5,28 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int scorePoints = 0;
+    //public static ScoreManager instance;
+    int score = 0;
+    public Text scoreText;
+    
 
-        public void AdjustScorePoints(int amount2)
+    private void Awake() {
+        //instance = this;
+    }
+
+
+    void Start()
     {
-        scorePoints += amount2;
+        scoreText.text = "SCORE: " + score.ToString();
+
+    }
+
+        public void AddScore(int amount)
+    {
+        score += amount;
+        scoreText.text = "SCORE: " + score.ToString();
         
-        
-        print("Adjusted score points by " + amount2 + "\nSCORE: " + scorePoints);
+        print("Adjusted score points by " + amount + "\nSCORE: " + score);
 
     }
 

@@ -51,6 +51,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         t = transform;
         anim = GetComponent<Animator>();
         r2d = GetComponent<Rigidbody2D>();
@@ -133,6 +134,7 @@ public class Player : MonoBehaviour
 
     private void Attack()
     {
+
         anim.SetTrigger("Attack");
         audioSource.PlayOneShot(attackSound);
 
@@ -186,8 +188,8 @@ public class Player : MonoBehaviour
                     }
                 }
 
-                GetComponent<ScoreManager>().AdjustScorePoints(+10);
-
+                GetComponent<ScoreManager>().AddScore(+10);
+                
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);
                 print("Blaine killed a mosquito");
@@ -199,7 +201,7 @@ public class Player : MonoBehaviour
                 //AdjustHitPoints(5);
                 audioSource.PlayOneShot(enemyKillSound);
 
-                GetComponent<ScoreManager>().AdjustScorePoints(+50);
+                GetComponent<ScoreManager>().AddScore(+50);
 
                 // Deactivate instead of destroying
                 enemy.gameObject.SetActive(false);
@@ -271,7 +273,7 @@ public class Player : MonoBehaviour
                         audioSource.PlayOneShot(speedBoostSound);
                         maxSpeed = 5.0f;
                         speedBoost = true;
-                        GetComponent<ScoreManager>().AdjustScorePoints(+20);
+                        GetComponent<ScoreManager>().AddScore(+20);
                         print("Blaine is speedy!");
                         textMsg.enabled = true;
                         textMsg.text = "Sugar Rush!";
@@ -286,7 +288,7 @@ public class Player : MonoBehaviour
                     case Item.ItemType.DOUBLE_DOUBLE: //20hp restored + double speed for 10 seconds
                         audioSource.PlayOneShot(healthHeartSound);
                         GetComponent<HealthManager>().AdjustHitPoints(+40);
-                        GetComponent<ScoreManager>().AdjustScorePoints(+20);
+                        GetComponent<ScoreManager>().AddScore(+20);
                         maxSpeed = 6.8f;
                         speedBoost = true;
                         textMsg.enabled = true;
@@ -319,7 +321,7 @@ public class Player : MonoBehaviour
         {
             audioSource.PlayOneShot(healthHeartSound);
             GetComponent<HealthManager>().AdjustHitPoints(-20);
-            GetComponent<ScoreManager>().AdjustScorePoints(-5);
+            GetComponent<ScoreManager>().AddScore(-5);
             print("Blaine got bitten by a mosquito");
 
             //implement random chance for Blaine to say something
@@ -386,9 +388,6 @@ public class Player : MonoBehaviour
             waitTime -= 0.1f;
         }
 
-        // Untint mosquito
-        //collision.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-
         if (isChasing)
         {
             collision.gameObject.GetComponent<FlyingEnemy>().chase = true;
@@ -400,10 +399,10 @@ public class Player : MonoBehaviour
         GetComponent<HealthManager>().AdjustHitPoints(amount);
     }
 
-    public void AdjustScorePoints(int amount)
+    public void AddScore(int amount)
     {
-        GetComponent<ScoreManager>().AdjustScorePoints(amount);
-    }
+        GetComponent<ScoreManager>().AddScore(amount);
+    } 
 
     IEnumerator NanaimoCooldown()
     {
